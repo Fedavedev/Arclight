@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,700&family=Oswald:wght@300;400;500;600;700&display=swap");
 @media (max-width: 800px) {
+  body {
+    padding: 5px !important;
+  }
   ul,
   .btn-con {
     display: none !important;
@@ -81,7 +84,7 @@
             flex-direction: column;
   }
   .plans-container .plans-col {
-    width: 350px !important;
+    width: 300px !important;
     height: 450px !important;
   }
   /* Plans Stylings Ends */
@@ -100,7 +103,7 @@
   .pricing-container .card-1,
   .pricing-container .card-2,
   .pricing-container .card-3 {
-    width: 350px !important;
+    width: 300px !important;
   }
   /* Pricing Stylings Ends */
   footer {
