@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,700&family=Oswald:wght@300;400;500;600;700&display=swap");
+
+@import "./mobile";
+
+$blueColor: #242dfe;
+$blackColor: #000000;
+$grayColor: #9c9c9c;
+$whiteColor: #ffffff;
+$Calistoga: "Oswald", sans-serif;
+$Merriweather: "Merriweather", serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $blueColor;
+  padding: 20px;
+}
+
+@mixin max-width {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@mixin general-width {
+  max-width: 1300px;
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: 450px 250px;
+  gap: 30px;
+  align-items: center;
+}
+
+/* General Styling Ends */
+
+header {
+  @include general-width();
+  background-color: $whiteColor;
+  padding: 50px;
+}
+
+nav {
+  @include max-width();
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+
+  ul li a {
+    text-decoration: none;
+    margin: 12px;
+    font-family: $Merriweather;
+    font-size: 18px;
+    color: $grayColor;
+    font-weight: 400;
+  }
+
+  .btn-con .nav-btn {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: $Merriweather;
+    padding: 15px 30px;
+    background-color: $blueColor;
+    color: $whiteColor;
+    font-weight: 400;
+    border-radius: 10px;
+  }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Header Stylings Ends */
+
+.hero {
+  @include general-width();
+  background-color: $whiteColor;
+}
+
+.hero-container {
+  @include max-width();
+  @include grid();
+
+  .hero-col-1 {
+    h1 {
+      font-size: 50px;
+      font-family: $Calistoga;
+      color: $blackColor;
+      line-height: 50px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: $Merriweather;
+      font-weight: 400;
+      line-height: 30px;
+      padding-bottom: 20px;
+    }
+
+    .btn-holder {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      align-items: center;
+
+      .hero-btn-1 {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: $Merriweather;
+        padding: 15px 20px;
+        background-color: $blueColor;
+        color: $whiteColor;
+        font-weight: 400;
+        border-radius: 10px;
+      }
+
+      .hero-btn-2 {
+        text-decoration: none;
+        font-size: 16px;
+        font-family: $Merriweather;
+        padding: 12px 18px;
+        background-color: #efefef;
+        color: $blackColor;
+        font-weight: 400;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    }
+
+    .reviews {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      margin-top: 20px;
+      max-width: 320px;
+      white-space: nowrap;
+
+      .stars,
+      .review-text {
+        margin: 10px;
+      }
+    }
+  }
+}
+
+/* Hero Section Ends */
+
+.logos {
+  @include general-width();
+  background-color: $whiteColor;
+}
+
+.logo-container {
+  @include max-width();
+  text-align: center;
+}
+
+/* Logos Section Ends */
+
+.dashboard {
+  @include general-width();
+  height: 400px;
+  margin-top: 40px;
+}
+
+.db-contain {
+  @include max-width();
+  @include grid();
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+
+  .db-col-2 {
+    h2 {
+      font-size: 35px;
+      font-family: $Calistoga;
+      color: $whiteColor;
+      line-height: 50px;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: $Merriweather;
+      font-weight: 400;
+      line-height: 30px;
+      padding-bottom: 20px;
+      color: #e7e8fe;
+    }
+  }
+}
+
+.marks {
+  width: 4%;
+  margin-right: 5px;
+}
+
+.checkmarks {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Dashboard Stylings Ends */
+
+.plans {
+  @include general-width();
+  height: 500px;
+  background-color: $whiteColor !important;
+}
+
+.plans-container {
+  padding-top: 70px !important;
+  @include max-width();
+  @include grid();
+  grid-template-columns: 500px 500px;
+  gap: 50px;
+
+  .plans-col {
+    background-color: $blueColor;
+    width: 500px;
+    height: 350px;
+    padding: 20px;
+
+    .card-title {
+      font-size: 35px;
+      font-family: $Calistoga;
+      color: $whiteColor;
+      line-height: 50px;
+      padding-bottom: 20px;
+    }
+
+    .card-desc {
+      font-size: 16px;
+      font-family: $Merriweather;
+      font-weight: 400;
+      line-height: 30px;
+      padding-bottom: 20px;
+      color: #e7e8fe;
+    }
+  }
+}
+
+.checks p {
+  font-size: 16px;
+  font-family: $Merriweather;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 20px;
+  color: $whiteColor;
+}
+
+/* Plans Stylings Ends */
+
+.pricing {
+  @include general-width();
+  height: 600px;
+  background-color: $whiteColor;
+}
+
+.pricing-container {
+  padding-top: 70px !important;
+  @include max-width();
+  @include grid();
+  grid-template-columns: repeat(3, 1fr);
+
+  .card-1,
+  .card-2,
+  .card-3 {
+    width: 300px;
+    height: 500px;
+  }
+
+  .card-2 {
+    background-color: $blueColor;
+    color: $whiteColor !important;
+  }
+}
+
+.sm-title {
+  font-family: $Merriweather;
+  font-size: 17px;
+  font-weight: 400px;
+}
+
+.price {
+  font-family: $Calistoga;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.mo {
+  font-family: $Merriweather;
+  font-size: 18px;
+  font-weight: 400;
+  color: $grayColor;
+  margin-bottom: 30px;
+}
+
+.card-descc {
+  font-family: $Merriweather;
+  font-size: 18px;
+  color: $blackColor;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.card-img p {
+  font-family: $Merriweather;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  padding-bottom: 15px;
+}
+
+.card-img p img {
+  display: inline-block;
+}
+
+.card-img img {
+  width: 5%;
+  margin-right: 10px;
+}
+
+.card-1 {
+  padding: 20px;
+}
+.card-2 {
+  padding: 20px;
+}
+.card-3 {
+  padding: 20px;
+}
+
+.card-btn {
+  background-color: $blueColor;
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card-btn a {
+  font-size: 16px;
+  font-family: $Calistoga;
+  font-weight: 400;
+  color: $whiteColor !important;
+  text-decoration: none;
+}
+
+.card-2 .price .mo {
+  color: #e7e8fe !important;
+}
+
+.desc-2 {
+  color: #e7e8fe !important;
+}
+
+.card-2 .card-btn {
+  background-color: #e7e8fe !important;
+}
+
+.card-2 .card-btn > a {
+  color: $blueColor !important;
+}
+
+/* Pricing Stylings Ends */
+
+footer {
+  @include general-width();
+  height: 300px;
+}
+
+.footer-holder {
+  padding-top: 70px;
+  @include max-width();
+  @include grid();
+  grid-template-columns: 400px 200px 200px 200px;
+}
+
+.f-1 p {
+  font-family: $Merriweather;
+  font-size: 16px;
+  color: $whiteColor;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.f-1 img {
+  padding-bottom: 20px !important;
+}
+
+.f-2,
+.f-3,
+.f-4 {
+  display: flex;
+  flex-direction: column;
+}
+
+.f-title {
+  font-family: $Merriweather;
+  font-size: 16px;
+  color: #e7e8fe;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.f-2 a,
+.f-3 a,
+.f-4 a {
+  font-family: $Merriweather;
+  font-size: 17px;
+  color: #e7e8fe;
+  text-decoration: none;
+}

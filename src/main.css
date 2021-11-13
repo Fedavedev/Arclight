@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,700&family=Oswald:wght@300;400;500;600;700&display=swap");
+@media (max-width: 800px) {
+  ul,
+  .btn-con {
+    display: none !important;
+  }
+  .mobile-menu {
+    display: block !important;
+  }
+  /* Header Stylings Ends */
+  .hero-container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .hero-col-1 h1 {
+    font-size: 35px !important;
+    padding: 15px;
+  }
+  .hero-col-1 p {
+    padding: 15px;
+  }
+  .map1 {
+    width: 100% !important;
+  }
+  .btn-holder {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    max-width: 310px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  .reviews {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+    max-width: 310px !important;
+    margin: 0 auto !important;
+  }
+  .reviews .stars {
+    padding-top: 30px !important;
+    text-align: center !important;
+  }
+  .reviews .review-text {
+    text-align: center !important;
+  }
+  /* Hero Stylings Ends */
+  .dashboard {
+    height: 800px !important;
+  }
+  .db-contain {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .db-contain .db-col-1 .db-img {
+    width: 100% !important;
+  }
+  /* Dashboard Stylings Ends */
+  .plans {
+    height: 1100px !important;
+  }
+  .plans-container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .plans-container .plans-col {
+    width: 350px !important;
+    height: 450px !important;
+  }
+  /* Plans Stylings Ends */
+  .pricing {
+    height: 1700px !important;
+  }
+  .pricing-container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pricing-container .card-1,
+  .pricing-container .card-2,
+  .pricing-container .card-3 {
+    width: 350px !important;
+  }
+  /* Pricing Stylings Ends */
+  footer {
+    height: 700px !important;
+  }
+  .footer-holder {
+    display: -ms-grid !important;
+    display: grid !important;
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #242dfe;
+  padding: 20px;
+}
+
+/* General Styling Ends */
+header {
+  max-width: 1300px;
+  background-color: #ffffff;
+  padding: 50px;
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  margin: 12px;
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  color: #9c9c9c;
+  font-weight: 400;
+}
+
+nav .btn-con .nav-btn {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  padding: 15px 30px;
+  background-color: #242dfe;
+  color: #ffffff;
+  font-weight: 400;
+  border-radius: 10px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* Header Stylings Ends */
+.hero {
+  max-width: 1300px;
+  background-color: #ffffff;
+}
+
+.hero-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 250px;
+      grid-template-columns: 450px 250px;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-container .hero-col-1 h1 {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+  color: #000000;
+  line-height: 50px;
+  padding-bottom: 20px;
+}
+
+.hero-container .hero-col-1 p {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+.hero-container .hero-col-1 .btn-holder {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-container .hero-col-1 .btn-holder .hero-btn-1 {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  padding: 15px 20px;
+  background-color: #242dfe;
+  color: #ffffff;
+  font-weight: 400;
+  border-radius: 10px;
+}
+
+.hero-container .hero-col-1 .btn-holder .hero-btn-2 {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  padding: 12px 18px;
+  background-color: #efefef;
+  color: #000000;
+  font-weight: 400;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.hero-container .hero-col-1 .reviews {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin-top: 20px;
+  max-width: 320px;
+  white-space: nowrap;
+}
+
+.hero-container .hero-col-1 .reviews .stars,
+.hero-container .hero-col-1 .reviews .review-text {
+  margin: 10px;
+}
+
+/* Hero Section Ends */
+.logos {
+  max-width: 1300px;
+  background-color: #ffffff;
+}
+
+.logo-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Logos Section Ends */
+.dashboard {
+  max-width: 1300px;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.db-contain {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 250px;
+      grid-template-columns: 450px 250px;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.db-contain .db-col-2 h2 {
+  font-size: 35px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  line-height: 50px;
+  padding-bottom: 20px;
+}
+
+.db-contain .db-col-2 p {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 20px;
+  color: #e7e8fe;
+}
+
+.marks {
+  width: 4%;
+  margin-right: 5px;
+}
+
+.checkmarks {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+/* Dashboard Stylings Ends */
+.plans {
+  max-width: 1300px;
+  height: 500px;
+  background-color: #ffffff !important;
+}
+
+.plans-container {
+  padding-top: 70px !important;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 250px;
+      grid-template-columns: 450px 250px;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 500px 500px;
+      grid-template-columns: 500px 500px;
+  gap: 50px;
+}
+
+.plans-container .plans-col {
+  background-color: #242dfe;
+  width: 500px;
+  height: 350px;
+  padding: 20px;
+}
+
+.plans-container .plans-col .card-title {
+  font-size: 35px;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  line-height: 50px;
+  padding-bottom: 20px;
+}
+
+.plans-container .plans-col .card-desc {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 20px;
+  color: #e7e8fe;
+}
+
+.checks p {
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  line-height: 30px;
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Plans Stylings Ends */
+.pricing {
+  max-width: 1300px;
+  height: 600px;
+  background-color: #ffffff;
+}
+
+.pricing-container {
+  padding-top: 70px !important;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 250px;
+      grid-template-columns: 450px 250px;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.pricing-container .card-1,
+.pricing-container .card-2,
+.pricing-container .card-3 {
+  width: 300px;
+  height: 500px;
+}
+
+.pricing-container .card-2 {
+  background-color: #242dfe;
+  color: #ffffff !important;
+}
+
+.sm-title {
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+  font-weight: 400px;
+}
+
+.price {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.mo {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #9c9c9c;
+  margin-bottom: 30px;
+}
+
+.card-descc {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.card-img p {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+  padding-bottom: 15px;
+}
+
+.card-img p img {
+  display: inline-block;
+}
+
+.card-img img {
+  width: 5%;
+  margin-right: 10px;
+}
+
+.card-1 {
+  padding: 20px;
+}
+
+.card-2 {
+  padding: 20px;
+}
+
+.card-3 {
+  padding: 20px;
+}
+
+.card-btn {
+  background-color: #242dfe;
+  padding: 15px 30px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.card-btn a {
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+.card-2 .price .mo {
+  color: #e7e8fe !important;
+}
+
+.desc-2 {
+  color: #e7e8fe !important;
+}
+
+.card-2 .card-btn {
+  background-color: #e7e8fe !important;
+}
+
+.card-2 .card-btn > a {
+  color: #242dfe !important;
+}
+
+/* Pricing Stylings Ends */
+footer {
+  max-width: 1300px;
+  height: 300px;
+}
+
+.footer-holder {
+  padding-top: 70px;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 450px 250px;
+      grid-template-columns: 450px 250px;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 400px 200px 200px 200px;
+      grid-template-columns: 400px 200px 200px 200px;
+}
+
+.f-1 p {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.f-1 img {
+  padding-bottom: 20px !important;
+}
+
+.f-2,
+.f-3,
+.f-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.f-title {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  color: #e7e8fe;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.f-2 a,
+.f-3 a,
+.f-4 a {
+  font-family: "Merriweather", serif;
+  font-size: 17px;
+  color: #e7e8fe;
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */

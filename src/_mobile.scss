@@ -1,0 +1,117 @@
+@media (max-width: 800px) {
+  ul,
+  .btn-con {
+    display: none !important;
+  }
+
+  .mobile-menu {
+    display: block !important;
+  }
+
+  /* Header Stylings Ends */
+
+  .hero-container {
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+
+  .hero-col-1 {
+    h1 {
+      font-size: 35px !important;
+      padding: 15px;
+    }
+
+    p {
+      padding: 15px;
+    }
+  }
+
+  .map1 {
+    width: 100% !important;
+  }
+
+  .btn-holder {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    max-width: 310px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  .reviews {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+    max-width: 310px !important;
+    margin: 0 auto !important;
+
+    .stars {
+      padding-top: 30px !important;
+      text-align: center !important;
+    }
+
+    .review-text {
+      text-align: center !important;
+    }
+  }
+
+  /* Hero Stylings Ends */
+
+  .dashboard {
+    height: 800px !important;
+  }
+
+  .db-contain {
+    display: flex !important;
+    flex-direction: column-reverse;
+
+    .db-col-1 {
+      .db-img {
+        width: 100% !important;
+      }
+    }
+  }
+
+  /* Dashboard Stylings Ends */
+
+  .plans {
+    height: 1100px !important;
+  }
+
+  .plans-container {
+    display: flex !important;
+    flex-direction: column;
+
+    .plans-col {
+      width: 350px !important;
+      height: 450px !important;
+    }
+  }
+
+  /* Plans Stylings Ends */
+
+  .pricing {
+    height: 1700px !important;
+  }
+
+  .pricing-container {
+    display: flex !important;
+    flex-direction: column;
+
+    .card-1,
+    .card-2,
+    .card-3 {
+      width: 350px !important;
+    }
+  }
+
+  /* Pricing Stylings Ends */
+
+  footer {
+    height: 700px !important;
+  }
+
+  .footer-holder {
+    display: grid !important;
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+}
